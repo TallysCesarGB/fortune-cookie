@@ -34,6 +34,11 @@ function App() {
     setImg(require("../assets/images/biscoitoAberto.png"));
   }
 
+  function newFortuneCookie() {
+    setImg(require("../assets/images/biscoito.png"));
+    setPhrase("");
+  }
+
   return (
     <View style={styles.container}>
       <TouchableOpacity onPress={crackFortuneCookie}>
@@ -49,7 +54,7 @@ function App() {
 
       <TouchableOpacity
         style={[styles.btn, { backgroundColor: "#dd7b22" }]}
-        onPress={() => setImg(require("../assets/images/biscoito.png"))}
+        onPress={newFortuneCookie}
       >
         <View>
           <Text style={[styles.btnLabel, { color: "#fff" }]}>
