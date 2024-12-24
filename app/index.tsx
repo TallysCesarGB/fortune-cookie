@@ -1,4 +1,3 @@
-import { getBackgroundColorAsync } from "expo-system-ui";
 import React, { useState } from "react";
 import { View, Image, TouchableOpacity, Text, StyleSheet } from "react-native";
 
